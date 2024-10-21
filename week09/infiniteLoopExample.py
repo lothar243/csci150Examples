@@ -7,6 +7,7 @@ def count_down():
     # This loop will run infinitely because `num` is never updated
     while num > 0:
         print(f"Counting down: {num}")
+        num = num - 1
 
     print("Countdown finished!")
 
