@@ -19,6 +19,7 @@ def display_statistics(numbers):
     if not numbers:
         print("No numbers were entered.")
     else:
+        # print the stats
         count = len(numbers)
         total_sum = sum(numbers)
         average = total_sum / count
