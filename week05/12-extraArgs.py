@@ -1,10 +1,5 @@
-def sandwich(bread, meat, *args):
-    print('{} on {}'.format(meat, bread), end=' ')
-    if len(args) > 0:
-        print('with', end=' ')
-    for extra in args:
-        print(extra, end=' ')
-    print('')
+def sandwich(bread, meat, *toppings):
+    print(f'{meat} on {bread}, toppings: ', toppings)
 
 
 sandwich('sourdough', 'turkey', 'mayo')

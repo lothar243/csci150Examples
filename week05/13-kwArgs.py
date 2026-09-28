@@ -1,11 +1,9 @@
 """goes through multiple sandwiches and prints their contents"""
 
 
-def sandwich(bread, meat, **kwargs):
+def sandwich(bread, meat, **toppings):
     """prints the contents of the sandwich"""
-    print('{} on {}'.format(meat, bread))
-    for category, extra in kwargs.items():
-        print('   {}: {}'.format(category, extra))
+    print(f'{meat} on {bread}, toppings: ', toppings)
 
 
 sandwich('sourdough', 'turkey', sauce='mayo')
